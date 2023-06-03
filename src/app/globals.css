@@ -94,6 +94,16 @@ p.success {
 p.danger {
   color: red;
 }
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.maincontent {
+  flex: 1;
+}
 /************ Navbar Css ************/
 nav.navbar {
   padding: 18px 0;
@@ -102,6 +112,7 @@ nav.navbar {
   top: 0;
   z-index: 9999;
   transition: 0.32s ease-in-out;
+  background: #0000007d;
 }
 nav.navbar.scrolled {
   padding: 0px 0;
@@ -562,7 +573,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 
 /************ Footer Css ************/
 .footer {
-  padding: 0 0 50px 0;
+  padding: 50px 0 50px 0;
   background-image: url('../assets/img/footer-bg.png');
   background-position: center center;
   background-size: cover;
