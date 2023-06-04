@@ -14,8 +14,8 @@ export default function Home() {
     <div className='app'>
       <Navigation />
       <Banner />
-      <Projects />
       <Skills />
+      <Projects />
       <Footer />
     </div>
   );

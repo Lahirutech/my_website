@@ -44,7 +44,7 @@ export default function Projects() {
   return (
     <section
       className='project'
-      id='project'
+      id='projects'
     >
       <Container>
         <Row>
