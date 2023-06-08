@@ -71,7 +71,7 @@ export const Banner = () => {
                     isVisible ? 'animate__animated animate__fadeIn' : ''
                   }
                 >
-                  <span className='tagline'>Welcome to my Portfolio</span>
+                  <span className='tagline'>Welcome to my Portfolio Bro</span>
                   <h1>
                     {`Hi! I'm Lanka`}{' '}
                     <span
