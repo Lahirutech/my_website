@@ -48,7 +48,7 @@ export default function Navigation() {
               }
               onClick={() => onUpdateActiveLink('skills')}
             >
-              Skills
+              Tech Stack
             </Nav.Link>
             <Nav.Link
               href='#projects'
@@ -83,7 +83,7 @@ export default function Navigation() {
             </div>
             <Link href='#connect'>
               <button className='vvd'>
-                <span>Let’s Connect</span>
+                <span>Download My CV</span>
               </button>
             </Link>
           </span>
