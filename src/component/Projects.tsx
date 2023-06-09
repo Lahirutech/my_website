@@ -74,13 +74,13 @@ export default function Projects() {
                       id='pills-tab'
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey='first'>Tab 1</Nav.Link>
+                        <Nav.Link eventKey='first'>Fullstack Projects</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey='second'>Tab 2</Nav.Link>
+                        <Nav.Link eventKey='second'>Articles</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey='third'>Tab 3</Nav.Link>
+                        <Nav.Link eventKey='third'>Youtube Content</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
