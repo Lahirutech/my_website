@@ -58,6 +58,7 @@ ul {
   padding: 0;
   line-height: normal;
   text-decoration: none;
+  color: white;
 }
 
 a:hover {
@@ -97,6 +98,10 @@ p.danger {
 
 .app {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
 }
 
 /************ Navbar Css ************/
@@ -382,6 +387,12 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   text-align: center;
   width: 56%;
 }
+.medium-project,
+.youtube-project {
+  margin: 14px auto 30px auto;
+  width: 50%;
+  position: relative;
+}
 .project .nav.nav-pills {
   width: 72%;
   margin: 0 auto;
@@ -449,6 +460,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   width: 100%;
   height: 0;
   transition: 0.4s ease-in-out;
+  cursor: pointer;
 }
 .proj-imgbx:hover::before {
   height: 100%;
@@ -466,6 +478,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 .proj-imgbx:hover .proj-txtx {
   top: 50%;
   opacity: 1;
+  cursor: pointer;
 }
 .proj-txtx h4 {
   font-size: 30px;
