@@ -2,9 +2,9 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 // import { MailchimpForm } from "./MailchimpForm";
 import logo from '../assets/img/logo.svg';
-import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
+import linkedin from '../assets/img/linkedinpng.png';
+import githubIcon from '../assets/img/githubpng.png';
+import stackover from '../assets/img/stackover.png';
 import Image from 'next/image';
 export default function Footer() {
   return (
@@ -17,6 +17,7 @@ export default function Footer() {
             sm={6}
           >
             <Image
+              className='footer-img'
               src={logo}
               alt='Logo'
             />
@@ -29,19 +30,19 @@ export default function Footer() {
             <div className='social-icon'>
               <a href='#'>
                 <Image
-                  src={navIcon1}
+                  src={linkedin}
                   alt='Icon'
                 />
               </a>
               <a href='#'>
                 <Image
-                  src={navIcon2}
+                  src={githubIcon}
                   alt='Icon'
                 />
               </a>
               <a href='#'>
                 <Image
-                  src={navIcon3}
+                  src={stackover}
                   alt='Icon'
                 />
               </a>
