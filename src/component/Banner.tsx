@@ -12,7 +12,11 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(200 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ['A Fullstack Developer', 'A Content Creator'];
+  const toRotate = [
+    'A Fullstack Developer',
+    'A Tech Youtuber',
+    'A Content Writer',
+  ];
   const period = 2000;
 
   useEffect(() => {
@@ -71,7 +75,7 @@ export const Banner = () => {
                     isVisible ? 'animate__animated animate__fadeIn' : ''
                   }
                 >
-                  <span className='tagline'>Welcome to my Portfolio Bro</span>
+                  <span className='tagline'>Welcome to my Portfolio</span>
                   <h1>
                     {`Hi! I'm Lanka,`}{' '}
                     <span
