@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
+import linkedin from '../assets/img/linkedinpng.png';
+import githubIcon from '../assets/img/githubpng.png';
+import stackover from '../assets/img/stackover.png';
 import Link from 'next/link';
 import Image from 'next/image';
 import logo from '../assets/img/logo.svg';
@@ -62,21 +62,30 @@ export default function Navigation() {
           </Nav>
           <span className='navbar-text'>
             <div className='social-icon'>
-              <a href='#'>
+              <a
+                href='https://www.linkedin.com/in/lanka-rathnayaka/'
+                target='_blank'
+              >
                 <Image
-                  src={navIcon1}
+                  src={linkedin}
                   alt=''
                 />
               </a>
-              <a href='#'>
+              <a
+                href='https://github.com/Lahirutech'
+                target='_blank'
+              >
                 <Image
-                  src={navIcon2}
+                  src={githubIcon}
                   alt=''
                 />
               </a>
-              <a href='#'>
+              <a
+                href='https://stackoverflow.com/users/7848518/lahiru-lanka-rathnayaka'
+                target='_blank'
+              >
                 <Image
-                  src={navIcon3}
+                  src={stackover}
                   alt=''
                 />
               </a>
