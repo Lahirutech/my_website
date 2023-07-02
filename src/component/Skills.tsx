@@ -1,11 +1,13 @@
 import React from 'react';
-import meter1 from '../assets/img/meter1.svg';
-import meter2 from '../assets/img/meter2.svg';
-import meter3 from '../assets/img/meter3.svg';
+import jslogo from '../assets/img/js-logo.svg';
+import reactlogo from '../assets/img/react-logo.svg';
+import tslogo from '../assets/img/Typescript_logo_2020.svg.png';
+import nodelogo from '../assets/img/nodelogo.png';
+import mongologo from '../assets/img/mongologo.svg';
+import awslogo from '../assets/img/awslogo.png';
+
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from '../assets/img/arrow1.svg';
-import arrow2 from '../assets/img/arrow2.svg';
 import colorSharp from '../assets/img/color-sharp.png';
 import Image from 'next/image';
 
@@ -40,46 +42,57 @@ export default function Skills() {
             <div className='skill-bx wow zoomIn'>
               <h2>Skills</h2>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.<br></br> Lorem Ipsum has been the industry&apos;s
-                standard dummy text.
+                I am dedicated to staying updated with the latest advancements
+                in the field and continually learning to enhance my tech stack.
+                <br></br>These are the technologies I have worked with and
+                gained valuable experience in.
               </p>
               <Carousel
                 responsive={responsive}
                 infinite={true}
+                ssr={true}
+                autoPlay={true}
+                autoPlaySpeed={2000}
                 className='owl-carousel owl-theme skill-slider'
               >
                 <div className='item'>
                   <Image
-                    src={meter1}
+                    src={jslogo}
                     alt='Image'
                   />
                   <h5>JavaScript</h5>
                 </div>
                 <div className='item'>
                   <Image
-                    src={meter1}
+                    src={tslogo}
                     alt='Image'
                   />
                   <h5>TypeScript</h5>
                 </div>
                 <div className='item'>
                   <Image
-                    src={meter2}
+                    src={reactlogo}
                     alt='Image'
                   />
                   <h5>React.js</h5>
                 </div>
                 <div className='item'>
                   <Image
-                    src={meter3}
+                    src={nodelogo}
                     alt='Image'
                   />
                   <h5>Node.js</h5>
                 </div>
                 <div className='item'>
                   <Image
-                    src={meter1}
+                    src={mongologo}
+                    alt='Image'
+                  />
+                  <h5>Mongo Db</h5>
+                </div>
+                <div className='item'>
+                  <Image
+                    src={awslogo}
                     alt='Image'
                   />
                   <h5>AWS</h5>
