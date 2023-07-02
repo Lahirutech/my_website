@@ -3,7 +3,6 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 import linkedin from '../assets/img/linkedinpng.png';
 import githubIcon from '../assets/img/githubpng.png';
 import stackover from '../assets/img/stackover.png';
-import Link from 'next/link';
 import Image from 'next/image';
 import logo from '../assets/img/logo.svg';
 
