@@ -90,11 +90,14 @@ export default function Navigation() {
                 />
               </a>
             </div>
-            <Link href='#connect'>
+            <a
+              href='/generalcv.pdf'
+              target='_blank'
+            >
               <button className='vvd'>
                 <span>Download My CV</span>
               </button>
-            </Link>
+            </a>
           </span>
         </Navbar.Collapse>
       </Container>

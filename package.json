@@ -23,6 +23,7 @@
     "react-dom": "18.2.0",
     "react-multi-carousel": "^2.8.4",
     "react-on-screen": "^2.1.1",
+    "sharp": "^0.32.1",
     "typescript": "5.0.4"
   }
 }

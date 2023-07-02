@@ -89,7 +89,7 @@ export const Banner = () => {
                     I am a fullstack developer over 3 years of experiene. I have
                     been working with multiple tech stacks mainly based on
                     Javascript. Here I have the links for some of my projects,
-                    youtube videos and articles. Olease make sure to contact me
+                    youtube videos and articles. Please make sure to contact me
                     for any enquiries
                   </p>
                 </div>
