@@ -6,10 +6,12 @@ export default function ProjectCard({
   title,
   description,
   imgUrl,
+  link,
 }: {
   title: string;
   description: string;
   imgUrl: StaticImageData;
+  link: string;
 }) {
   return (
     <Col
@@ -17,16 +19,21 @@ export default function ProjectCard({
       sm={6}
       md={4}
     >
-      <div className='proj-imgbx'>
-        <Image
-          alt=''
-          src={imgUrl}
-        />
-        <div className='proj-txtx'>
-          <h4>{title}</h4>
-          <span>{description}</span>
+      <a
+        href={link}
+        target='_blank'
+      >
+        <div className='proj-imgbx'>
+          <Image
+            alt=''
+            src={imgUrl}
+          />
+          <div className='proj-txtx'>
+            <h4>{title}</h4>
+            <span>{description}</span>
+          </div>
         </div>
-      </div>
+      </a>
     </Col>
   );
 }
