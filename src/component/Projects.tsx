@@ -1,44 +1,55 @@
 import React from 'react';
 import { Container, Row, Col, Tab, Nav } from 'react-bootstrap';
-import projImg1 from '../assets/img/project-img1.png';
-import projImg2 from '../assets/img/project-img2.png';
+import gpt3 from '../assets/img/gpt3-landing.png';
+import babyname from '../assets/img/babyname.png';
+import hotel from '../assets/img/hotel-offers.png';
+import googleSignin from '../assets/img/google-signin.png';
+import fullstack from '../assets/img/fullstack.png';
+
+import mediumProfile from '../assets/img/mediumProfile.png';
+import youtubeProfile from '../assets/img/youtubeProfile.png';
+
 import projImg3 from '../assets/img/project-img3.png';
 import colorSharp2 from '../assets/img/color-sharp2.png';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import ProjectCard from './ProjectCard';
 import Image from 'next/image';
+import Link from 'next/link';
 export default function Projects() {
   const projects = [
     {
-      title: 'Business Startup',
-      description: 'Design & Development',
-      imgUrl: projImg1,
+      title: 'Nextjs Fullstack',
+      description:
+        'Fullstack application with Google Authentication and CRUD operations',
+      imgUrl: fullstack,
+      link: 'https://fullstack-blog-sigma.vercel.app/',
     },
     {
-      title: 'Business Startup',
-      description: 'Design & Development',
-      imgUrl: projImg2,
+      title: 'Startup Landing Page',
+      description: 'Landing page designed using Meterial-Ui and Nextjs',
+      imgUrl: gpt3,
+      link: 'https://gpt3landing.vercel.app/',
     },
     {
-      title: 'Business Startup',
-      description: 'Design & Development',
-      imgUrl: projImg3,
+      title: 'Baby Names Using AI',
+      description: 'Integrated Chat-GPT api to generate names for babies.',
+      imgUrl: babyname,
+      link: 'https://gpt-integration.vercel.app/baby',
     },
     {
-      title: 'Business Startup',
-      description: 'Design & Development',
-      imgUrl: projImg1,
+      title: 'Hotel Offers UI',
+      description:
+        'Designed a ui in Material UI and Nextjs to a website that posts Hotel Offers',
+      imgUrl: hotel,
+      link: 'https://hotel-offers.vercel.app/',
     },
     {
-      title: 'Business Startup',
-      description: 'Design & Development',
-      imgUrl: projImg2,
-    },
-    {
-      title: 'Business Startup',
-      description: 'Design & Development',
-      imgUrl: projImg3,
+      title: 'Authentication System',
+      description:
+        'Tried Next-Auth authentication to integrate third party auth providers such as Google,Facebook, ect',
+      imgUrl: googleSignin,
+      link: 'https://next-auth-gray.vercel.app/login',
     },
   ];
   return (
@@ -58,11 +69,10 @@ export default function Projects() {
                 >
                   <h2>Projects</h2>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the
-                    industry&apos;s standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book.
+                    I have been developing Full Stack side projects to get in
+                    touch with new technologies. And also I am adding youtube
+                    content and writing on medium. I always love to share the
+                    things I learn
                   </p>
                   <Tab.Container
                     id='projects-tabs'
@@ -101,23 +111,51 @@ export default function Projects() {
                           })}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey='section'>
+                      <Tab.Pane eventKey='second'>
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
+                          Writing is something I have been enjoying a lot. I am
+                          contributing to some of popular medium publications
+                          such as Level Up Coding,Jsavascript in Plain English,
+                          Geek Culture ect.
                         </p>
+                        <Link
+                          target='_blank'
+                          href='https://medium.com/@freelancingcult'
+                        >
+                          <div className='medium-project proj-imgbx'>
+                            <Image
+                              src={mediumProfile}
+                              alt=''
+                            ></Image>
+                            <div className='proj-txtx'>
+                              {' '}
+                              <h4>Visit My medium Profile</h4>
+                            </div>
+                          </div>
+                        </Link>
                       </Tab.Pane>
                       <Tab.Pane eventKey='third'>
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
+                          I create videos to youtube whenever I got a chance. I
+                          love to share the knwoledge I learn with the Fullstack
+                          developer community.{' '}
                         </p>
+                        <Link
+                          target='_blank'
+                          href={'https://www.youtube.com/@thefullstackproject'}
+                        >
+                          <div className='youtube-project proj-imgbx'>
+                            {' '}
+                            <Image
+                              src={youtubeProfile}
+                              alt=''
+                            ></Image>
+                            <div className='proj-txtx'>
+                              {' '}
+                              <h4 color='white'>Visit My Yotube Channel</h4>
+                            </div>
+                          </div>
+                        </Link>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
