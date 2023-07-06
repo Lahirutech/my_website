@@ -5,6 +5,7 @@ import babyname from '../assets/img/babyname.png';
 import hotel from '../assets/img/hotel-offers.png';
 import googleSignin from '../assets/img/google-signin.png';
 import fullstack from '../assets/img/fullstack.png';
+import coffee from '../assets/img/coffee.png';
 
 import mediumProfile from '../assets/img/mediumProfile.png';
 import youtubeProfile from '../assets/img/youtubeProfile.png';
@@ -49,6 +50,12 @@ export default function Projects() {
         'Tried Next-Auth authentication to integrate third party auth providers such as Google,Facebook, ect',
       imgUrl: googleSignin,
       link: 'https://next-auth-gray.vercel.app/login',
+    },
+    {
+      title: 'Coffee Shop Landing Page',
+      description: 'Landing page for a Coffee shop with animation',
+      imgUrl: coffee,
+      link: 'https://coffe-landing-cyan.vercel.app/',
     },
   ];
   return (
